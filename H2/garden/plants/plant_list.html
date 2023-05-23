@@ -1,0 +1,8 @@
+{% extends "plants/base.html" %}
+
+{% block "content" %}
+	{% for object in object_list %}
+		<p><a href="/plant/{{ object.pk }}">{{ object }}</a></p>
+	{% endfor %}
+
+{% endblock "content" %}
